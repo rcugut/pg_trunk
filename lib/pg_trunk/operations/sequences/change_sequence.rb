@@ -18,7 +18,7 @@
 #     # change_sequence "my_schema.global_id" do |s|
 #     #   s.owned_by "", "", from: %w[users gid]
 #     #   s.type "smallint", from: "integer"
-#     #   s.iterate_by 1, from: 2
+#     #   s.increment_by 1, from: 2
 #     #   s.min_value 1, from: 0
 #     #   s.max_value 2000, from: 1999
 #     #   s.start_with 2, from: 1
@@ -38,7 +38,7 @@
 #     # ```ruby
 #     # change_sequence "my_schema.global_id", if_exists: true do |s|
 #     #   s.type "smallint"
-#     #   s.iterate_by 1
+#     #   s.increment_by 1
 #     #   s.min_value 1
 #     #   s.max_value 2000
 #     #   s.start_with 2
